@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','About')
+@section('title','All Posts')
 
 @section('content')
     <div class="container mt-5">
@@ -25,8 +25,9 @@
                         {{ Str::limit($post->body,'100') }} <br> <br>
                         <a href="/posts/{{ $post->slug }}">Read more..</a>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer d-flex justify-content-between">
                         Published on {{ $post->created_at->diffForHumans() }}
+                        <a href="/posts/{{ $post->slug }}/edit" class="btn btn-sm btn-success">Edit</a>
                     </div>
                 </div>
             </div>
