@@ -26,6 +26,9 @@
                     <li class="nav-item{{ request()->is('contact') ? ' active' : '' }}">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
+                    <li class="nav-item{{ request()->is('posts') ? ' active' : '' }}">
+                        <a class="nav-link" href="/posts">Posts</a>
+                    </li>
                     </ul>
                 </div>
             </div>
