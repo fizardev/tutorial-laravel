@@ -8,12 +8,13 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Add New Post</h4>
+                        <h4>Edit Post</h4>
                     </div>
                     <div class="card-body">
-                        <form action="/posts/store" method="POST">
+                        <form action="/posts/{{ $post->slug }}/edit" method="POST">
+                            @method('patch')
                             @csrf
-                            @include('posts.partials.form-control', ['submit' => 'Create'])
+                            @include('posts.partials.form-control')
                         </form>
                     </div>
                 </div>

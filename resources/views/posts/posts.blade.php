@@ -3,9 +3,10 @@
 @section('title','All Posts')
 
 @section('content')
-    <div class="container mt-5">
+    <div class="container mt-4">
         <div class="d-flex">
             <div class="col-lg-12 px-0">
+                {{-- @include('alert') --}}
                 <div class="title d-flex justify-content-between">
                     <h1>All Posts</h1>
                     <a href="/posts/add-post" class="btn btn-primary px-3 py-0" style="line-height: 50px">Add New Post</a>
@@ -45,3 +46,5 @@
         </div>
     </div>
 @endsection
+
+
